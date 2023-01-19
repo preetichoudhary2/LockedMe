@@ -1,0 +1,28 @@
+package basic;
+
+
+import java.util.Scanner;
+
+
+public class Welcome {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Welcome to LockedMe.com");
+		System.out.println("Developer Name:-Preeti Choudhary");
+		System.out.println("you need to enter feature and file from cosole to perform the fuctionality");
+		System.out.println("Enter feature");
+		String feature = sc.next();
+		System.out.println("Enter File name");
+		String file = sc.next();
+		System.out.println("You want to "+feature+" File "+file);
+		System.out.println("please enter Y/N to confirm ");
+		String confirm = sc.next();
+		if(confirm=="Y")
+		{
+			System.out.println(file + "has been added");
+			
+		}                                                                                                                                                                                                                                   
+	}
+}
+ 

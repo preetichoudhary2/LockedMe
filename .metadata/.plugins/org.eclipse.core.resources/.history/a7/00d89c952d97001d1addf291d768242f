@@ -1,0 +1,46 @@
+package basic;
+
+public class FileBean {
+
+	private int id;
+	private String fileName;
+	private String path;
+	
+	public FileBean() {
+		
+	}
+		
+		
+	public FileBean(int id, String fileName, String path) {
+		this.id = id;
+		this.fileName = fileName;
+		this.path = path;
+	}
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getFileName() {
+		return fileName;
+	}
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+	public String getFilePath() {
+		return path;
+	}
+	public void setFilePath(String path) {
+		this.path = path;
+	}
+	@Override
+	public String toString() {
+		return "File [id=" + id +", fileName=" + fileName+", path=" + path + 
+				"]";
+	}
+	
+	
+}

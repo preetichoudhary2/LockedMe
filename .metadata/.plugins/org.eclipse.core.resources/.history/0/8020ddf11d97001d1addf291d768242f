@@ -1,0 +1,38 @@
+package basic;
+
+public class Operations {
+
+
+
+	private int id;
+	private String feature;
+	
+		
+		
+	public Operations(int id, String feature) {
+		this.id = id;
+		this.feature = feature;
+		
+	}
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getFileName() {
+		return fileName;
+	}
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+	@Override
+	public String toString() {
+		return "Book [id=" + id +", fileName=" + fileName+", path=" + path + 
+				"]";
+	}
+	
+	
+}

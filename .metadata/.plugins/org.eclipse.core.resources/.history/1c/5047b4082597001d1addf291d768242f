@@ -1,0 +1,40 @@
+package basic;
+
+public class File {
+
+	private int id;
+	private String fileName;
+	private String path;
+	
+	public File() {
+		
+	}
+		
+		
+	public File(int id, String fileName, String path) {
+		this.id = id;
+		this.fileName = fileName;
+		this.path = path;
+	}
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getFileName() {
+		return fileName;
+	}
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+	@Override
+	public String toString() {
+		return "Book [id=" + id +", fileName=" + fileName+", path=" + path + 
+				"]";
+	}
+	
+	
+}

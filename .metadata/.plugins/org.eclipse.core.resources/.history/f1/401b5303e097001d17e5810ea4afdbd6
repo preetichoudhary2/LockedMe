@@ -1,0 +1,43 @@
+package basic;
+
+import java.io.File;
+
+public class FileBean {
+
+	protected static int id;
+	protected static String fileName;
+	static File root_dir = new File("/home/preetichoudhary/Desktop/Core_Java/Files/");
+	protected static final String path= root_dir.getAbsolutePath();
+	
+		
+	public FileBean(int id, String fileName) {
+		this.id = id;
+		this.fileName = fileName;
+	}
+	
+	
+	
+
+
+
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getFileName() {
+		return fileName;
+	}
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+	
+	@Override
+	public String toString() {
+		return "File [id=" + id +", fileName=" + fileName+", path=" + path + 
+				"]";
+	}
+	
+	
+}

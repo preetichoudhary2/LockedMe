@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class test {
+
+	public static void main(String[] args) {
+		/*
+		 * 1. Create a list of customers
+		 * 2. Display the names of unique cities from where you get busoness
+		 * 3. Display the count of customers in every city
+		 */
+
+		String root_dir="/home/preetichoudhary/Desktop/Core_Java/";
+		List<File> file = new ArrayList<File>();
+		file.add(new file(1, "file1",234 ,"root_dir"));
+		
+	
+		Set<String> cities = new HashSet<String>();
+		for(Customer cust : customers)
+			cities.add(cust.getCity());
+		
+		System.out.println(cities);
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		for(Customer cust : customers)
+		{
+			String key = cust.getCity();
+			if(map.containsKey(key))
+			{
+				Integer count = map.get(key);
+				count += 1;
+				map.put(key, count);
+			}
+			else
+				map.put(key, 1);
+		}
+		System.out.println(map);
+	}
+
+}

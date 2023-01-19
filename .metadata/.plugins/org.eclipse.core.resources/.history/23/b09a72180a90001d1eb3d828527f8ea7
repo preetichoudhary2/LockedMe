@@ -1,0 +1,10 @@
+package basic;
+
+public class HelloProgram {
+
+public static void main()
+{
+System.out.println("hello Preeti")	;
+}
+	
+}

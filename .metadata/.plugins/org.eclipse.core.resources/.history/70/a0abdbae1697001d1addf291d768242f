@@ -1,0 +1,76 @@
+package basic;
+
+
+import java.util.Scanner;
+
+
+public class Welcome {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Welcome to LockedMe.com");
+		System.out.println("Developer Name:-Preeti Choudhary");
+		System.out.println("you need to enter feature and file from cosole to perform the fuctionality");
+		System.out.println("Enter feature");
+		String feature = sc.next();
+		System.out.println("Enter File name");
+		int file = sc.nextInt();
+		System.out.println("You want to "+feature+"the"+file);
+		System.out.println("please enter Y/N to confirm ");
+		
+	}
+}
+ /*
+package basic;
+
+public class LoopsDemo {
+
+	public static void main(String[] args) {
+		// what is repeated => printing 1
+		/*
+		 * initializatio  : start = 1
+		 * condition : start <= 10
+		 * incr / decr : start+=1
+		 * 
+		 * for(initialize;condition;update)
+		 
+		for(int start=0; start<10 ;start++)
+			System.out.println(1);
+
+
+		/**
+		 * initialize
+		 * while(condition)
+		 * {
+		 * BL
+		 * update
+		 * }
+		 
+
+		int x = 1;
+		while(x<=10)
+		{
+			System.out.println(x*x);
+			x++;
+		}
+
+		/**
+		 * initialize
+		 * do{
+		 * BL
+		 * update
+		 * }
+		 * while(condition);
+		 * 
+		
+
+		int x1 = 1;
+		do
+		{
+			System.out.println(x*x);
+			x++;
+		}while(x1<=10);
+
+	}
+
+}*/

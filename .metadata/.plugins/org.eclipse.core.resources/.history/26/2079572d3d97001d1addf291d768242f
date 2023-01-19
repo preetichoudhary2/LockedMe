@@ -1,0 +1,68 @@
+package basic;
+
+import java.io.File;  // Import the File class
+import java.io.IOException;  // Import the IOException class to handle errors
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class CurdFile extends FileBean
+{
+
+
+	public CurdFile() {
+		super(id, fileName);
+		
+		// TODO Auto-generated constructor stub
+	}
+
+
+	
+
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	void addFile(){
+	
+    try {
+    	
+      File myObj = new File(FileBean.path+"/" +FileBean.fileName);
+      if (myObj.createNewFile()) {
+    	 
+        System.out.println("File created: " + myObj.getName());
+      } else {
+        System.out.println("File already exists.");
+      }
+    } catch (IOException e) {
+//      System.out.println("An error occurred.");
+      e.printStackTrace();
+    }
+	}
+	
+	void deleteFile(){
+		
+	    File myObj = new File(FileBean.path+"/" +FileBean.fileName);
+	    System.out.println("Path"+myObj);
+	      if (myObj.delete()) { 
+        System.out.println("Deleted the file: " + myObj.getName());
+	      } else {
+        System.out.println("Failed to delete the file.");
+	      }
+	}
+	
+	void displayFile(){
+		 String[] fileLists;
+		 File f = new File(FileBean.path+"/");
+		 fileLists = f.list();
+		 List<String> fileArrayLists = new ArrayList<String>(Arrays.asList(fileLists));
+		 
+	      for (String fileList : fileArrayLists) {
+	            // Print the names of files and directories
+	            System.out.println(fileList);
+	        }
+	    }
+	
+}

@@ -1,0 +1,68 @@
+package basic;
+
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class Welcome {
+
+	private final static String  root_dir="/home/preetichoudhary/Desktop/Core_Java/";
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		ArrayList<File> fileList;
+		System.out.println("Welcome to LockedMe.com");
+		System.out.println("Developer Name:-Preeti Choudhary");
+		System.out.println("Please select options given below");
+		System.out.println("1- Add");
+		System.out.println("2- Delete");
+		System.out.println("3- Display");
+		System.out.println("4- Exit");
+		int option = sc.nextInt();
+
+		
+		switch (option) {
+		  case 1:
+		    System.out.println("Please Enter the filename");
+		    fileList = (ArrayList<File>) addFile( new File(1,sc.next(),root_dir));
+		    System.out.println("Added Succesfully");
+		    break;
+		  case 2:
+		    System.out.println("I want to Delete");
+		    break;
+		  case 3:
+			System.out.println("I want to Display");
+			break;
+		  case 4:
+		    System.out.println("I want to Exit");
+		    break;
+		}
+	}
+		
+		    
+		    private static List<File> addFile(File fileName) {
+		   	System.out.println(fileName + " has been added");
+		    List<File> file = new ArrayList<File>();
+			file.add(fileName);
+			System.out.println(fileName + " has been added");
+			System.out.println(" Do you want to use next operation:-");
+			return file;
+			
+		    }	
+		                                                                                                                                                                                                                                  
+	
+	
+	private static Operations performOpertaion(Scanner sc ) {
+		System.out.println("Enter feature");
+		String feature = sc.next();
+		System.out.println("Enter File name");
+		String fileName = sc.next();
+		System.out.println("You want to "+feature+" File "+fileName);
+		new Operations(new File().getId(),feature);
+		return Operations;
+		
+	}
+}
+ 

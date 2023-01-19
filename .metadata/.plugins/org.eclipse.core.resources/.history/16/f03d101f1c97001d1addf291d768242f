@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class test {
+
+	public static void main(String[] args) {
+		/*
+		 * 1. Create a list of customers
+		 * 2. Display the names of unique cities from where you get busoness
+		 * 3. Display the count of customers in every city
+		 */
+
+		String root_dir="/home/preetichoudhary/Desktop/Core_Java/";
+		List<File> file = new ArrayList<File>();
+		file.add(new File(1, "file1","root_dir"));
+		System.out.println(file);
+	}
+
+}

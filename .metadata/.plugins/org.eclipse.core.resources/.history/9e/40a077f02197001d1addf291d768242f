@@ -1,0 +1,62 @@
+package basic;
+
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class Welcome {
+
+	private final static String  root_dir="/home/preetichoudhary/Desktop/Core_Java/";
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		
+		System.out.println("Welcome to LockedMe.com");
+		System.out.println("Developer Name:-Preeti Choudhary");
+		System.out.println("Please select options given below");
+		System.out.println("1- Add");
+		System.out.println("2- Delete");
+		System.out.println("3- Display");
+		System.out.println("4- Exit");
+		int option = sc.nextInt();
+
+		
+		switch (option) {
+		  case 1:
+		    System.out.println("I want to Add");
+		    break;
+		  case 2:
+		    System.out.println("I want to Delete");
+		    break;
+		  case 3:
+			System.out.println("I want to Display");
+			break;
+		  case 4:
+		    System.out.println("I want to Exit");
+		    break;
+		
+		    
+		    private void addFile(File fileName,Operations ops) {
+		    List<File> file = new ArrayList<File>();
+			file.add(fileName);
+			System.out.println(fileName + " has been added");
+			System.out.println(" Do you want to use next operation:-");
+			
+			
+		                                                                                                                                                                                                                                  
+	
+	
+	private static Operations performOpertaion(Scanner sc ) {
+		System.out.println("Enter feature");
+		String feature = sc.next();
+		System.out.println("Enter File name");
+		String fileName = sc.next();
+		System.out.println("You want to "+feature+" File "+fileName);
+		new Operations(new File().getId(),feature);
+		return Operations;
+		
+	}
+}
+ 
